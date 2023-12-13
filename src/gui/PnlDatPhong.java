@@ -251,7 +251,13 @@ public class PnlDatPhong extends JFrame {
 		JButton btn_Huy = new JButton("Hủy");
 		btn_Huy.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				resetForm();
+				int opt = JOptionPane.showConfirmDialog(rootPane,
+						"Xác nhận Hủy đặt phòng ?", "Xác nhận",
+						JOptionPane.YES_NO_OPTION);
+					if (opt == JOptionPane.YES_OPTION) {
+						HuyDatPhong();
+						resetForm();
+					}
 			}
 		});
 		btn_Huy.setIcon(new ImageIcon(PnlDatPhong.class.getResource("/res/icons8-remove-24.png")));
@@ -339,7 +345,7 @@ public class PnlDatPhong extends JFrame {
 		contentPane.add(lblNewLabel_2);
 
 		cbTinhTrang = new JComboBox();
-		cbTinhTrang.setModel(new DefaultComboBoxModel(new String[] { "Phòng trống", "Phòng đang sử dụng" }));
+		cbTinhTrang.setModel(new DefaultComboBoxModel(new String[] {"Phòng Trống", "Phòng đang sử dụng"}));
 		cbTinhTrang.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		cbTinhTrang.setBounds(354, 502, 190, 30);
 		contentPane.add(cbTinhTrang);
@@ -411,6 +417,14 @@ public class PnlDatPhong extends JFrame {
 		txtTenKH.setText("");
 		txtGioBatDau.setText("");
 	}
+	public void HuyDatPhong() {
+		int row = tbDSPhong.getSelectedRow();
+		int maPhong = (int) tbDSPhong.getValueAt(row, 0);
+		DatPhong_dao.deleteDatPhong(maPhong);
+		updateTableData();
+		JOptionPane.showMessageDialog(null, "Hủy đặt phòng thành công");
+	}
+	
 	public void layThongTin() {
 		//Mã phiếu, mã phòng, mã kh, tên kh, sdt, số lượng ng, thời gian đặt, tên nv
 		// Lấy dữ liệu từ JTable

@@ -81,6 +81,24 @@ public class DatPhong_dao extends ConnectSQL {
 			close(stmt);
 		}
 	}
+	
+	public static boolean deleteDatPhong(int maPhong) {
+		int n = 0;
+		ConnectSQL con = new ConnectSQL();
+		PreparedStatement stmt = null;
+		String sql = "UPDATE Phong set tinhTrang = N'Phòng Trống' where maPhong = ?";
+		try {
+			stmt = con.connect().prepareStatement(sql);
+			stmt.setInt(1, maPhong);
+			stmt.executeUpdate();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return n > 0;
+	}
+	
 	public static PhieuDatPhong getMaPDP(String tenPhong) {
 		PhieuDatPhong phong = null;
 		ConnectSQL.getInstance();
