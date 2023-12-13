@@ -352,7 +352,7 @@ public class PnlTinhTien extends JFrame {
 		int opt = JOptionPane.showConfirmDialog(rootPane, "Bạn có muốn xuất hóa đơn ?", "Xác nhận",
 				JOptionPane.YES_NO_OPTION);
 		if (opt == JOptionPane.YES_OPTION) {
-			excelFile.exportToExcel(maHD, "ThongTin_hoaDon.xlsx");
+			excelFile.ExportExcel(maHD);
 		}
 		resetForm();
 		lamMoiBang();
