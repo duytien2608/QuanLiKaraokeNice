@@ -168,7 +168,10 @@ public class TaiKhoanDao extends ConnectSQL {
 		public static List<String> getServices() {
 			List<String> maNV = new ArrayList<>();
 			ConnectSQL con = new ConnectSQL();
-			String sql = "SELECT maNV FROM NhanVien"; // Thay đổi thành tên bảng và trường thực tế của bạn
+			String sql = "SELECT nhanvien.maNV\r\n"
+					+ "FROM NhanVien\r\n"
+					+ "inner join taikhoan on taikhoan.manv = nhanvien.manv\r\n"
+					+ "WHERE tendangnhap IS null and tendangnhap = '';"; // Thay đổi thành tên bảng và trường thực tế của bạn
 
 			try (PreparedStatement preparedStatement = con.connect().prepareStatement(sql);
 					ResultSet resultSet = preparedStatement.executeQuery()) {

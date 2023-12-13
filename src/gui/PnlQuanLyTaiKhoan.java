@@ -101,14 +101,14 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 
 		Panel panel = new Panel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(-190, 0, 1920, 177);
+		panel.setBounds(-190, 0, 2538, 194);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
 		JLabel lbl_Karaoke = new JLabel("Karaoke Nice");
 		lbl_Karaoke.setBackground(new Color(32, 178, 1));
 		lbl_Karaoke.setFont(new Font("Vladimir Script", Font.BOLD, 80));
-		lbl_Karaoke.setBounds(758, 37, 468, 111);
+		lbl_Karaoke.setBounds(776, 54, 468, 111);
 		panel.add(lbl_Karaoke);
 
 		btn_DangXuat = new JButton("Thoát");
@@ -139,49 +139,49 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		});
 		btn_DangXuat.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/account-logout-16.png")));
 		btn_DangXuat.setFont(new Font("Times New Roman", Font.PLAIN, 15));
-		btn_DangXuat.setBounds(1546, 131, 120, 35);
+		btn_DangXuat.setBounds(1526, 148, 120, 35);
 		panel.add(btn_DangXuat);
 
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/tenDangNhap.png")));
-		lblNewLabel.setBounds(1571, 0, 84, 68);
+		lblNewLabel.setBounds(1541, 28, 84, 68);
 		panel.add(lblNewLabel);
 
 		JLabel lblNguoiDung = new JLabel("Người dùng: ");
 		String tenDangNhap = PnlDangNhap.tenDangNhap;
 		lblNguoiDung.setText(lblNguoiDung.getText() + " " + TaiKhoanDao.getTenNV(tenDangNhap));		
 		lblNguoiDung.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNguoiDung.setBounds(1489, 79, 344, 41);
+		lblNguoiDung.setBounds(1469, 107, 344, 41);
 		panel.add(lblNguoiDung);
 
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/kara.png")));
-		lblNewLabel_1.setBounds(213, 0, 235, 177);
+		lblNewLabel_1.setBounds(194, 0, 254, 194);
 		panel.add(lblNewLabel_1);
 
 		JLabel lbl_ThongTinTK = new JLabel("Thông tin tài khoản");
-		lbl_ThongTinTK.setBounds(223, 183, 172, 25);
-		lbl_ThongTinTK.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lbl_ThongTinTK.setBounds(24, 200, 274, 47);
+		lbl_ThongTinTK.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		contentPane.add(lbl_ThongTinTK);
 
 		JLabel lbl_MaTK = new JLabel("Mã nhân viên:");
 		lbl_MaTK.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_MaTK.setBounds(585, 210, 140, 30);
+		lbl_MaTK.setBounds(259, 258, 140, 30);
 		contentPane.add(lbl_MaTK);
 
 		JLabel lbl_TenDangNhap = new JLabel("Tên đăng nhập:");
 		lbl_TenDangNhap.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_TenDangNhap.setBounds(585, 265, 140, 30);
+		lbl_TenDangNhap.setBounds(259, 313, 140, 30);
 		contentPane.add(lbl_TenDangNhap);
 
 		txtTenDangNhap = new JTextField();
 		txtTenDangNhap.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTenDangNhap.setColumns(10);
-		txtTenDangNhap.setBounds(735, 265, 200, 30);
+		txtTenDangNhap.setBounds(409, 313, 200, 30);
 		contentPane.add(txtTenDangNhap);
 
 		JSeparator separator = new JSeparator();
-		separator.setBounds(0, 360, 1603, 2);
+		separator.setBounds(0, 428, 1603, 2);
 		contentPane.add(separator);
 
 		btn_Them = new JButton("Thêm");
@@ -193,7 +193,7 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		btn_Them.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/icons8-add-20.png")));
 		btn_Them.setBackground(new Color(240, 230, 140));
 		btn_Them.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Them.setBounds(200, 370, 120, 30);
+		btn_Them.setBounds(200, 438, 120, 40);
 		contentPane.add(btn_Them);
 
 		btn_Sua = new JButton("Sửa");
@@ -210,7 +210,7 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		btn_Sua.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/icons8-pencil-16.png")));
 		btn_Sua.setBackground(new Color(240, 230, 140));
 		btn_Sua.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Sua.setBounds(450, 370, 120, 30);
+		btn_Sua.setBounds(450, 438, 120, 40);
 		contentPane.add(btn_Sua);
 
 		btn_XoaTrang = new JButton("Xóa trắng");
@@ -222,7 +222,7 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		btn_XoaTrang.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/x-mark-16.png")));
 		btn_XoaTrang.setBackground(new Color(240, 230, 140));
 		btn_XoaTrang.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_XoaTrang.setBounds(709, 370, 133, 30);
+		btn_XoaTrang.setBounds(709, 438, 133, 40);
 		contentPane.add(btn_XoaTrang);
 
 		btn_TimKiem = new JButton("Làm mới");
@@ -234,16 +234,16 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		btn_TimKiem.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/icons8-refresh-16.png")));
 		btn_TimKiem.setBackground(new Color(240, 230, 140));
 		btn_TimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_TimKiem.setBounds(975, 370, 133, 30);
+		btn_TimKiem.setBounds(975, 438, 133, 40);
 		contentPane.add(btn_TimKiem);
 
-		JLabel lbl_DSTK = new JLabel("Danh sách tài khoản:");
-		lbl_DSTK.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lbl_DSTK.setBounds(223, 410, 190, 25);
+		JLabel lbl_DSTK = new JLabel("Danh sách tài khoản");
+		lbl_DSTK.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lbl_DSTK.setBounds(24, 501, 291, 47);
 		contentPane.add(lbl_DSTK);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(78, 446, 1540, 314);
+		scrollPane.setBounds(24, 559, 1540, 314);
 		contentPane.add(scrollPane);
 
 		tbTaiKhoan = new JTable();
@@ -263,23 +263,23 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 
 		JLabel lbl_MatKhau = new JLabel("Mật khẩu:");
 		lbl_MatKhau.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_MatKhau.setBounds(585, 320, 140, 30);
+		lbl_MatKhau.setBounds(259, 368, 140, 30);
 		contentPane.add(lbl_MatKhau);
 
 		txtMatKhau = new JTextField();
 		txtMatKhau.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtMatKhau.setColumns(10);
-		txtMatKhau.setBounds(735, 320, 200, 30);
+		txtMatKhau.setBounds(409, 368, 200, 30);
 		contentPane.add(txtMatKhau);
 
 		JLabel lbl_MaTK_1 = new JLabel("Kích hoạt:");
 		lbl_MaTK_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_MaTK_1.setBounds(1023, 210, 140, 30);
+		lbl_MaTK_1.setBounds(702, 260, 103, 30);
 		contentPane.add(lbl_MaTK_1);
 
 		rdKichHoat = new JRadioButton("");
 		rdKichHoat.setSelected(true);
-		rdKichHoat.setBounds(1169, 217, 34, 23);
+		rdKichHoat.setBounds(811, 265, 34, 23);
 		contentPane.add(rdKichHoat);
 
 		JButton btn_TimKiem_1 = new JButton("Tìm kiếm");
@@ -292,41 +292,25 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		btn_TimKiem_1.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/icons8-search-16.png")));
 		btn_TimKiem_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		btn_TimKiem_1.setBackground(new Color(240, 230, 140));
-		btn_TimKiem_1.setBounds(1233, 370, 133, 30);
+		btn_TimKiem_1.setBounds(1233, 438, 133, 40);
 		contentPane.add(btn_TimKiem_1);
 
 		JLabel lbl_MatKhau_1 = new JLabel("Tìm kiếm:");
 		lbl_MatKhau_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_MatKhau_1.setBounds(1026, 319, 140, 30);
+		lbl_MatKhau_1.setBounds(700, 367, 140, 30);
 		contentPane.add(lbl_MatKhau_1);
 
 		txtTimKiem = new JTextField();
 		txtTimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTimKiem.setColumns(10);
-		txtTimKiem.setBounds(1191, 320, 200, 30);
+		txtTimKiem.setBounds(865, 368, 200, 30);
 		contentPane.add(txtTimKiem);
 
 		cbTenNV = new JComboBox();
 		timMaNV();
 		cbTenNV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		cbTenNV.setBounds(735, 212, 200, 30);
+		cbTenNV.setBounds(409, 260, 200, 30);
 		contentPane.add(cbTenNV);
-
-		JButton btnNewButton = new JButton("");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				String maNVStr = cbTenNV.getSelectedItem().toString();
-				try {
-					KtraTK(maNVStr);
-				} catch (SQLException e1) {
-					// TODO Auto-generated catch block
-					e1.printStackTrace();
-				}
-			}
-		});
-		btnNewButton.setIcon(new ImageIcon(PnlQuanLyTaiKhoan.class.getResource("/res/icons8-search-16.png")));
-		btnNewButton.setBounds(945, 211, 34, 29);
-		contentPane.add(btnNewButton);
 
 	}
 
@@ -378,11 +362,6 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		}
 	}
 
-	private void KtraTK(String maNVStr) throws SQLException {
-		maNVStr = cbTenNV.getSelectedItem().toString();
-		int maNV = Integer.parseInt(maNVStr);
-		TaiKhoanDao.checkAccount(maNV);
-	}
 
 	private boolean validData() {
 		String tenDangNhap = txtTenDangNhap.getText();
@@ -412,7 +391,8 @@ public class PnlQuanLyTaiKhoan extends JFrame {
 		String tenDangNhap = tbTaiKhoan.getValueAt(row, 1).toString();
 		String matKhau = tbTaiKhoan.getValueAt(row, 2).toString();
 		// Hiển thị dữ liệu
-		cbTenNV.setSelectedItem(maNV);
+		cbTenNV.removeAllItems();
+		cbTenNV.addItem(maNV);
 		txtTenDangNhap.setText(tenDangNhap);
 		txtMatKhau.setText(matKhau);
 		boolean gioiTinh;

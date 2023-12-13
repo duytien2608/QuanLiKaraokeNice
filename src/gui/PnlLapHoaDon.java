@@ -91,7 +91,7 @@ public class PnlLapHoaDon extends JFrame {
 		setTitle("Lập hóa đơn");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setExtendedState(MAXIMIZED_BOTH);
-		setBounds(0, 0, 1920, 1080);
+//		setBounds(0, 0, 1920, 1080);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 
@@ -99,13 +99,13 @@ public class PnlLapHoaDon extends JFrame {
 		contentPane.setLayout(null);
 
 		JLabel lblNewLabel_ThanhToan = new JLabel("LẬP HÓA ĐƠN:");
-		lblNewLabel_ThanhToan.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-		lblNewLabel_ThanhToan.setBounds(34, 250, 182, 38);
+		lblNewLabel_ThanhToan.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lblNewLabel_ThanhToan.setBounds(34, 244, 182, 38);
 		contentPane.add(lblNewLabel_ThanhToan);
 
 		JLabel lblNewLabel_DanhSachPhongDangSuDung = new JLabel("DANH SÁCH PHÒNG ĐANG SỬ DỤNG:");
-		lblNewLabel_DanhSachPhongDangSuDung.setFont(new Font("Times New Roman", Font.PLAIN, 22));
-		lblNewLabel_DanhSachPhongDangSuDung.setBounds(34, 310, 399, 38);
+		lblNewLabel_DanhSachPhongDangSuDung.setFont(new Font("Times New Roman", Font.BOLD, 22));
+		lblNewLabel_DanhSachPhongDangSuDung.setBounds(34, 310, 465, 38);
 		contentPane.add(lblNewLabel_DanhSachPhongDangSuDung);
 
 		JScrollPane scrollPane = new JScrollPane();
@@ -228,7 +228,7 @@ public class PnlLapHoaDon extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(0, 0, 1755, 200);
+		panel.setBounds(0, 0, 2012, 200);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -238,20 +238,20 @@ public class PnlLapHoaDon extends JFrame {
 		panel.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Karaoke Nice");
-		lblNewLabel_1.setFont(new Font("Vladimir Script", Font.PLAIN, 80));
+		lblNewLabel_1.setFont(new Font("Vladimir Script", Font.BOLD, 80));
 		lblNewLabel_1.setBounds(599, 33, 433, 156);
 		panel.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon(PnlLapHoaDon.class.getResource("/res/tenDangNhap.png")));
-		lblNewLabel_2.setBounds(1364, 11, 72, 73);
+		lblNewLabel_2.setBounds(1372, 23, 72, 73);
 		panel.add(lblNewLabel_2);
 		
 		JLabel lblNguoiDung = new JLabel("Người dùng: ");
 		String tenDN = PnlDangNhap.tenDangNhap;
 		lblNguoiDung.setText(lblNguoiDung.getText() + " " + TaiKhoanDao.getTenNV(tenDN));
 		lblNguoiDung.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNguoiDung.setBounds(1259, 87, 274, 32);
+		lblNguoiDung.setBounds(1267, 99, 385, 32);
 		panel.add(lblNguoiDung);
 		
 		JButton btnNewButton = new JButton("Thoát");
@@ -282,11 +282,11 @@ public class PnlLapHoaDon extends JFrame {
 		});
 		btnNewButton.setIcon(new ImageIcon(PnlLapHoaDon.class.getResource("/res/account-logout-16.png")));
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btnNewButton.setBounds(1340, 141, 109, 32);
+		btnNewButton.setBounds(1345, 142, 109, 32);
 		panel.add(btnNewButton);
 		
 		JLabel lblNewLabel_DanhSachPhongDangSuDung_2 = new JLabel("DANH SÁCH DỊCH VỤ ĐANG SỬ DỤNG:");
-		lblNewLabel_DanhSachPhongDangSuDung_2.setFont(new Font("Times New Roman", Font.PLAIN, 22));
+		lblNewLabel_DanhSachPhongDangSuDung_2.setFont(new Font("Times New Roman", Font.BOLD, 22));
 		lblNewLabel_DanhSachPhongDangSuDung_2.setBounds(34, 592, 501, 38);
 		contentPane.add(lblNewLabel_DanhSachPhongDangSuDung_2);
 	}

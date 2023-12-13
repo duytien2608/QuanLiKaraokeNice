@@ -99,14 +99,14 @@ public class PnlQuanLyDichVu extends JFrame {
 
 		Panel panel = new Panel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(-180, 0, 1920, 186);
+		panel.setBounds(-180, 0, 2552, 196);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
 		JLabel lbl_Karaoke = new JLabel("Karaoke Nice");
 		lbl_Karaoke.setBackground(new Color(32, 178, 1));
 		lbl_Karaoke.setFont(new Font("Vladimir Script", Font.BOLD, 80));
-		lbl_Karaoke.setBounds(817, 35, 448, 103);
+		lbl_Karaoke.setBounds(813, 62, 448, 103);
 		panel.add(lbl_Karaoke);
 
 		JButton btn_DangXuat = new JButton("Thoát");
@@ -158,56 +158,56 @@ public class PnlQuanLyDichVu extends JFrame {
 		panel.add(lblNewLabel_1);
 
 		JLabel lbl_ThongTinDV = new JLabel("Thông tin dịch vụ");
-		lbl_ThongTinDV.setBounds(10, 192, 190, 25);
-		lbl_ThongTinDV.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lbl_ThongTinDV.setBounds(10, 202, 235, 48);
+		lbl_ThongTinDV.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		contentPane.add(lbl_ThongTinDV);
 
 		JLabel lbl_MaDV = new JLabel("Mã DV:");
 		lbl_MaDV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_MaDV.setBounds(270, 210, 115, 30);
+		lbl_MaDV.setBounds(271, 254, 115, 30);
 		contentPane.add(lbl_MaDV);
 
 		JLabel lbl_DonViTinh = new JLabel("Đơn vị tính:");
 		lbl_DonViTinh.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_DonViTinh.setBounds(270, 265, 115, 30);
+		lbl_DonViTinh.setBounds(271, 309, 115, 30);
 		contentPane.add(lbl_DonViTinh);
 
 		JLabel lbl_LoaiDV = new JLabel("Loại DV:");
 		lbl_LoaiDV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_LoaiDV.setBounds(270, 320, 115, 30);
+		lbl_LoaiDV.setBounds(271, 364, 115, 30);
 		contentPane.add(lbl_LoaiDV);
 
 		JLabel lbl_TenDV = new JLabel("Tên DV:");
 		lbl_TenDV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_TenDV.setBounds(865, 210, 115, 30);
+		lbl_TenDV.setBounds(866, 254, 115, 30);
 		contentPane.add(lbl_TenDV);
 
 		JLabel lbl_GiaNhap = new JLabel("Giá nhập:");
 		lbl_GiaNhap.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_GiaNhap.setBounds(865, 265, 115, 30);
+		lbl_GiaNhap.setBounds(866, 309, 115, 30);
 		contentPane.add(lbl_GiaNhap);
 
 		txtMaDV = new JTextField();
 		txtMaDV.setEditable(false);
 		txtMaDV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		txtMaDV.setBounds(450, 210, 200, 30);
+		txtMaDV.setBounds(451, 254, 200, 30);
 		contentPane.add(txtMaDV);
 		txtMaDV.setColumns(10);
 
 		txtTenDV = new JTextField();
 		txtTenDV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTenDV.setColumns(10);
-		txtTenDV.setBounds(1020, 210, 200, 30);
+		txtTenDV.setBounds(1021, 254, 200, 30);
 		contentPane.add(txtTenDV);
 
 		txtGiaNhap = new JTextField();
 		txtGiaNhap.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtGiaNhap.setColumns(10);
-		txtGiaNhap.setBounds(1020, 265, 200, 30);
+		txtGiaNhap.setBounds(1021, 309, 200, 30);
 		contentPane.add(txtGiaNhap);
 
 		JSeparator separator = new JSeparator();
-		separator.setBounds(0, 361, 1730, 1);
+		separator.setBounds(0, 416, 1730, 1);
 		contentPane.add(separator);
 
 		JButton btn_Them = new JButton("Thêm");
@@ -219,7 +219,7 @@ public class PnlQuanLyDichVu extends JFrame {
 		btn_Them.setIcon(new ImageIcon(PnlQuanLyDichVu.class.getResource("/res/icons8-add-20.png")));
 		btn_Them.setBackground(new Color(240, 230, 140));
 		btn_Them.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Them.setBounds(200, 370, 120, 30);
+		btn_Them.setBounds(202, 428, 120, 30);
 		contentPane.add(btn_Them);
 
 		JButton btn_Sua = new JButton("Sửa");
@@ -240,7 +240,7 @@ public class PnlQuanLyDichVu extends JFrame {
 		btn_Sua.setIcon(new ImageIcon(PnlQuanLyDichVu.class.getResource("/res/icons8-pencil-16.png")));
 		btn_Sua.setBackground(new Color(240, 230, 140));
 		btn_Sua.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Sua.setBounds(450, 370, 120, 30);
+		btn_Sua.setBounds(452, 428, 120, 30);
 		contentPane.add(btn_Sua);
 
 		JButton btn_Xoa = new JButton("Xóa");
@@ -256,7 +256,7 @@ public class PnlQuanLyDichVu extends JFrame {
 		btn_Xoa.setIcon(new ImageIcon(PnlQuanLyDichVu.class.getResource("/res/icons8-remove-24.png")));
 		btn_Xoa.setBackground(new Color(240, 230, 140));
 		btn_Xoa.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Xoa.setBounds(700, 370, 120, 30);
+		btn_Xoa.setBounds(702, 428, 120, 30);
 		contentPane.add(btn_Xoa);
 
 		JButton btn_XoaTrang = new JButton("Xóa trắng");
@@ -268,7 +268,7 @@ public class PnlQuanLyDichVu extends JFrame {
 		btn_XoaTrang.setIcon(new ImageIcon(PnlQuanLyDichVu.class.getResource("/res/x-mark-16.png")));
 		btn_XoaTrang.setBackground(new Color(240, 230, 140));
 		btn_XoaTrang.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_XoaTrang.setBounds(950, 370, 132, 30);
+		btn_XoaTrang.setBounds(952, 428, 132, 30);
 		contentPane.add(btn_XoaTrang);
 
 		JButton btn_TimKiem = new JButton("Tìm kiếm");
@@ -281,16 +281,16 @@ public class PnlQuanLyDichVu extends JFrame {
 		btn_TimKiem.setIcon(new ImageIcon(PnlQuanLyDichVu.class.getResource("/res/icons8-search-16.png")));
 		btn_TimKiem.setBackground(new Color(240, 230, 140));
 		btn_TimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_TimKiem.setBounds(1458, 370, 132, 30);
+		btn_TimKiem.setBounds(1460, 428, 132, 30);
 		contentPane.add(btn_TimKiem);
 
-		JLabel lbl_DSDV = new JLabel("Danh sách dịch vụ:");
-		lbl_DSDV.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lbl_DSDV.setBounds(10, 410, 200, 25);
+		JLabel lbl_DSDV = new JLabel("Danh sách dịch vụ");
+		lbl_DSDV.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lbl_DSDV.setBounds(10, 469, 294, 48);
 		contentPane.add(lbl_DSDV);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(104, 446, 1540, 314);
+		scrollPane.setBounds(101, 528, 1540, 314);
 		contentPane.add(scrollPane);
 
 		tbDSDichVu = new JTable();
@@ -304,7 +304,7 @@ public class PnlQuanLyDichVu extends JFrame {
 		tbDSDichVu.setModel(new DefaultTableModel(new Object[][] {},
 				new String[] { "M\u00E3 d\u1ECBch v\u1EE5", "T\u00EAn d\u1ECBch v\u1EE5", "Lo\u1EA1i d\u1ECBch v\u1EE5",
 						"\u0110\u01A1n v\u1ECB t\u00EDnh", "Gi\u00E1 nh\u1EADp", "Gi\u00E1 b\u00E1n" }));
-		tbDSDichVu.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		tbDSDichVu.setFont(new Font("Times New Roman", Font.PLAIN, 18));
 //		list = (ArrayList<DichVu>) dv.docTuBang();
 		model = (DefaultTableModel) tbDSDichVu.getModel();
 		updateTableData();
@@ -313,24 +313,24 @@ public class PnlQuanLyDichVu extends JFrame {
 		cbLoaiDV = new JComboBox();
 		cbLoaiDV.setModel(new DefaultComboBoxModel(new String[] { "Đồ uống", "Thức ăn" }));
 		cbLoaiDV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		cbLoaiDV.setBounds(450, 320, 200, 30);
+		cbLoaiDV.setBounds(451, 364, 200, 30);
 		contentPane.add(cbLoaiDV);
 
 		JLabel lbl_GiaDV_1 = new JLabel("Giá bán:");
 		lbl_GiaDV_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_GiaDV_1.setBounds(865, 319, 115, 30);
+		lbl_GiaDV_1.setBounds(866, 363, 115, 30);
 		contentPane.add(lbl_GiaDV_1);
 
 		txtGiaBan = new JTextField();
 		txtGiaBan.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtGiaBan.setColumns(10);
-		txtGiaBan.setBounds(1020, 320, 200, 30);
+		txtGiaBan.setBounds(1021, 364, 200, 30);
 		contentPane.add(txtGiaBan);
 
 		cbDVT = new JComboBox();
 		cbDVT.setModel(new DefaultComboBoxModel(new String[] { "CÁI", "LON", "THÙNG", "PHẦN" }));
 		cbDVT.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		cbDVT.setBounds(450, 265, 200, 30);
+		cbDVT.setBounds(451, 309, 200, 30);
 		contentPane.add(cbDVT);
 
 		JButton btnNewButton = new JButton("");
@@ -346,18 +346,18 @@ public class PnlQuanLyDichVu extends JFrame {
 		});
 		btnNewButton.setIcon(new ImageIcon(PnlQuanLyDichVu.class.getResource("/res/icons8-add-20.png")));
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		btnNewButton.setBounds(667, 264, 33, 31);
+		btnNewButton.setBounds(668, 308, 33, 31);
 		contentPane.add(btnNewButton);
 
 		JLabel lbl_GiaDV_1_1 = new JLabel("Tìm kiếm:");
 		lbl_GiaDV_1_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_GiaDV_1_1.setBounds(1308, 320, 115, 30);
+		lbl_GiaDV_1_1.setBounds(1309, 364, 115, 30);
 		contentPane.add(lbl_GiaDV_1_1);
 
 		txtTimKiem = new JTextField();
 		txtTimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTimKiem.setColumns(10);
-		txtTimKiem.setBounds(1430, 320, 200, 30);
+		txtTimKiem.setBounds(1431, 364, 200, 30);
 		contentPane.add(txtTimKiem);
 		
 		JButton btn_XoaTrang_1 = new JButton("Làm mới");
@@ -369,7 +369,7 @@ public class PnlQuanLyDichVu extends JFrame {
 		btn_XoaTrang_1.setIcon(new ImageIcon(PnlQuanLyDichVu.class.getResource("/res/icons8-refresh-16.png")));
 		btn_XoaTrang_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		btn_XoaTrang_1.setBackground(new Color(240, 230, 140));
-		btn_XoaTrang_1.setBounds(1203, 370, 132, 30);
+		btn_XoaTrang_1.setBounds(1205, 428, 132, 30);
 		contentPane.add(btn_XoaTrang_1);
 
 	}

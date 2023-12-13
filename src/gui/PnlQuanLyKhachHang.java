@@ -101,14 +101,14 @@ public class PnlQuanLyKhachHang extends JFrame {
 
 		Panel panel = new Panel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(-190, 0, 1920, 171);
+		panel.setBounds(-190, 0, 2369, 182);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
 		JLabel lbl_Karaoke = new JLabel("Karaoke Nice");
 		lbl_Karaoke.setBackground(new Color(32, 178, 1));
 		lbl_Karaoke.setFont(new Font("Vladimir Script", Font.BOLD, 80));
-		lbl_Karaoke.setBounds(843, 32, 407, 115);
+		lbl_Karaoke.setBounds(811, 45, 407, 115);
 		panel.add(lbl_Karaoke);
 
 		btn_DangXuat = new JButton("Thoát");
@@ -144,7 +144,7 @@ public class PnlQuanLyKhachHang extends JFrame {
 
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setIcon(new ImageIcon(PnlQuanLyKhachHang.class.getResource("/res/kara.png")));
-		lblNewLabel.setBounds(194, 0, 267, 171);
+		lblNewLabel.setBounds(194, 0, 267, 182);
 		panel.add(lblNewLabel);
 
 		JLabel lblNewLabel_1 = new JLabel("");
@@ -160,62 +160,62 @@ public class PnlQuanLyKhachHang extends JFrame {
 		panel.add(lblNguoiDung);
 
 		JLabel lbl_ThongTinKH = new JLabel("Thông tin khách hàng");
-		lbl_ThongTinKH.setBounds(10, 178, 190, 25);
-		lbl_ThongTinKH.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lbl_ThongTinKH.setBounds(20, 188, 310, 30);
+		lbl_ThongTinKH.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		contentPane.add(lbl_ThongTinKH);
 
-		JLabel lbl_MaKH = new JLabel("Mã KH:");
+		JLabel lbl_MaKH = new JLabel("Mã Khách hàng:");
 		lbl_MaKH.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_MaKH.setBounds(270, 210, 115, 30);
+		lbl_MaKH.setBounds(270, 229, 156, 30);
 		contentPane.add(lbl_MaKH);
 
-		JLabel lbl_TenKH = new JLabel("Tên KH:");
+		JLabel lbl_TenKH = new JLabel("Tên Khách hàng:");
 		lbl_TenKH.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_TenKH.setBounds(270, 265, 115, 30);
+		lbl_TenKH.setBounds(270, 284, 166, 30);
 		contentPane.add(lbl_TenKH);
 
 		JLabel lbl_DiaChi = new JLabel("Địa chỉ:");
 		lbl_DiaChi.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_DiaChi.setBounds(270, 320, 115, 30);
+		lbl_DiaChi.setBounds(270, 336, 115, 30);
 		contentPane.add(lbl_DiaChi);
 
 		JLabel lbl_SĐT = new JLabel("Số điện thoại:");
 		lbl_SĐT.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_SĐT.setBounds(865, 210, 115, 30);
+		lbl_SĐT.setBounds(865, 229, 115, 30);
 		contentPane.add(lbl_SĐT);
 
 		JLabel lbl_SoCMND = new JLabel("Email:");
 		lbl_SoCMND.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_SoCMND.setBounds(865, 265, 115, 30);
+		lbl_SoCMND.setBounds(865, 284, 115, 30);
 		contentPane.add(lbl_SoCMND);
 
 		txtMaKH = new JTextField();
 		txtMaKH.setEditable(false);
 		txtMaKH.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		txtMaKH.setBounds(450, 210, 200, 30);
+		txtMaKH.setBounds(450, 229, 200, 30);
 		contentPane.add(txtMaKH);
 		txtMaKH.setColumns(10);
 
 		txtTenKH = new JTextField();
 		txtTenKH.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTenKH.setColumns(10);
-		txtTenKH.setBounds(450, 265, 200, 30);
+		txtTenKH.setBounds(450, 284, 200, 30);
 		contentPane.add(txtTenKH);
 
 		txtSDT = new JTextField();
 		txtSDT.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtSDT.setColumns(10);
-		txtSDT.setBounds(1020, 210, 200, 30);
+		txtSDT.setBounds(1020, 229, 200, 30);
 		contentPane.add(txtSDT);
 
 		txtEmail = new JTextField();
 		txtEmail.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtEmail.setColumns(10);
-		txtEmail.setBounds(1020, 265, 200, 30);
+		txtEmail.setBounds(1020, 284, 200, 30);
 		contentPane.add(txtEmail);
 
 		JSeparator separator = new JSeparator();
-		separator.setBounds(0, 360, 1540, 2);
+		separator.setBounds(0, 391, 1540, 2);
 		contentPane.add(separator);
 
 		btn_Them = new JButton("Thêm");
@@ -227,7 +227,7 @@ public class PnlQuanLyKhachHang extends JFrame {
 		btn_Them.setIcon(new ImageIcon(PnlQuanLyKhachHang.class.getResource("/res/icons8-add-20.png")));
 		btn_Them.setBackground(new Color(240, 230, 140));
 		btn_Them.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Them.setBounds(200, 370, 120, 30);
+		btn_Them.setBounds(385, 401, 120, 41);
 		contentPane.add(btn_Them);
 
 		btn_Sua = new JButton("Sửa");
@@ -244,7 +244,7 @@ public class PnlQuanLyKhachHang extends JFrame {
 		btn_Sua.setIcon(new ImageIcon(PnlQuanLyKhachHang.class.getResource("/res/icons8-pencil-16.png")));
 		btn_Sua.setBackground(new Color(240, 230, 140));
 		btn_Sua.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Sua.setBounds(450, 370, 120, 30);
+		btn_Sua.setBounds(597, 401, 120, 41);
 		contentPane.add(btn_Sua);
 
 		btn_XoaTrang = new JButton("Xóa trắng");
@@ -256,7 +256,7 @@ public class PnlQuanLyKhachHang extends JFrame {
 		btn_XoaTrang.setIcon(new ImageIcon(PnlQuanLyKhachHang.class.getResource("/res/x-mark-16.png")));
 		btn_XoaTrang.setBackground(new Color(240, 230, 140));
 		btn_XoaTrang.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_XoaTrang.setBounds(735, 370, 132, 30);
+		btn_XoaTrang.setBounds(802, 401, 132, 41);
 		contentPane.add(btn_XoaTrang);
 
 		btn_TimKiem = new JButton("Tìm kiếm");
@@ -269,16 +269,16 @@ public class PnlQuanLyKhachHang extends JFrame {
 		btn_TimKiem.setIcon(new ImageIcon(PnlQuanLyKhachHang.class.getResource("/res/icons8-search-16.png")));
 		btn_TimKiem.setBackground(new Color(240, 230, 140));
 		btn_TimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_TimKiem.setBounds(1017, 370, 132, 30);
+		btn_TimKiem.setBounds(1017, 401, 132, 41);
 		contentPane.add(btn_TimKiem);
 
 		JLabel lbl_DSNV = new JLabel("Danh sách khách hàng:");
-		lbl_DSNV.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lbl_DSNV.setBounds(10, 410, 200, 25);
+		lbl_DSNV.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lbl_DSNV.setBounds(20, 460, 333, 25);
 		contentPane.add(lbl_DSNV);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 445, 1540, 314);
+		scrollPane.setBounds(10, 495, 1540, 314);
 		contentPane.add(scrollPane);
 
 		tbKhachHang = new JTable();
@@ -299,18 +299,18 @@ public class PnlQuanLyKhachHang extends JFrame {
 		txtDiaChi = new JTextField();
 		txtDiaChi.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtDiaChi.setColumns(10);
-		txtDiaChi.setBounds(450, 320, 340, 30);
+		txtDiaChi.setBounds(450, 336, 340, 30);
 		contentPane.add(txtDiaChi);
 
 		JLabel lbl_SoCMND_1 = new JLabel("Tìm kiếm:");
 		lbl_SoCMND_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_SoCMND_1.setBounds(865, 320, 115, 30);
+		lbl_SoCMND_1.setBounds(865, 336, 115, 30);
 		contentPane.add(lbl_SoCMND_1);
 
 		txtTimKiem = new JTextField();
 		txtTimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTimKiem.setColumns(10);
-		txtTimKiem.setBounds(1020, 320, 200, 30);
+		txtTimKiem.setBounds(1020, 336, 200, 30);
 		contentPane.add(txtTimKiem);
 
 	}

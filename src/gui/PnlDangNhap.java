@@ -82,38 +82,38 @@ public class PnlDangNhap extends JFrame {
 		
 		panel = new JPanel();
 		panel.setBackground(new Color(102, 153, 255));
-		panel.setBounds(0, 0, 1678, 163);
+		panel.setBounds(0, 0, 1898, 215);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
-		lblNewLabel_1 = new JLabel("Phần mềm quản lý Karaoke Nice");
-		lblNewLabel_1.setBounds(381, 56, 567, 49);
-		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD | Font.ITALIC, 40));
+		lblNewLabel_1 = new JLabel("Karaoke Nice");
+		lblNewLabel_1.setBounds(503, 59, 760, 105);
+		lblNewLabel_1.setFont(new Font("Vladimir Script", Font.BOLD, 80));
 		panel.add(lblNewLabel_1);
 		
 		lblNewLabel = new JLabel("");
+		lblNewLabel.setBounds(23, -15, 263, 257);
+		panel.add(lblNewLabel);
 		lblNewLabel.setIcon(new ImageIcon(PnlDangNhap.class.getResource("/res/kara.png")));
-		lblNewLabel.setBounds(49, 174, 263, 257);
-		contentPane.add(lblNewLabel);
 		
 		lblNewLabel_2 = new JLabel("Người dùng:");
 		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-		lblNewLabel_2.setBounds(364, 174, 184, 42);
+		lblNewLabel_2.setBounds(537, 268, 184, 42);
 		contentPane.add(lblNewLabel_2);
 		
 		lblNewLabel_2_1 = new JLabel("Mật khẩu:");
 		lblNewLabel_2_1.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-		lblNewLabel_2_1.setBounds(364, 252, 184, 42);
+		lblNewLabel_2_1.setBounds(537, 346, 184, 42);
 		contentPane.add(lblNewLabel_2_1);
 		
 		textField_NguoiDung = new JTextField();
-		textField_NguoiDung.setBounds(523, 174, 195, 42);
+		textField_NguoiDung.setBounds(696, 268, 195, 42);
 		textField_NguoiDung.setFont(new Font("Times New Roman", Font.PLAIN, 22));
 		contentPane.add(textField_NguoiDung);
 		textField_NguoiDung.setColumns(10);
 		
 		passwordField_MatKhau = new JPasswordField();
-		passwordField_MatKhau.setBounds(523, 256, 195, 42);
+		passwordField_MatKhau.setBounds(696, 350, 195, 42);
 		passwordField_MatKhau.setFont(new Font("Times New Roman", Font.PLAIN, 22));
 		contentPane.add(passwordField_MatKhau);
 		
@@ -139,7 +139,7 @@ public class PnlDangNhap extends JFrame {
 	});
 		
 		btnDangNhap.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-		btnDangNhap.setBounds(427, 366, 159, 42);
+		btnDangNhap.setBounds(562, 441, 159, 42);
 		contentPane.add(btnDangNhap);
 		
 		
@@ -154,12 +154,12 @@ public class PnlDangNhap extends JFrame {
 			}
 		});
 		btnThoat.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-		btnThoat.setBounds(616, 366, 159, 42);
+		btnThoat.setBounds(777, 441, 159, 42);
 		contentPane.add(btnThoat);
 		
 		JLabel lblNewLabel_3 = new JLabel("");
 		lblNewLabel_3.setIcon(new ImageIcon(PnlDangNhap.class.getResource("/res/phan-mem-quan-ly-karaoke.png")));
-		lblNewLabel_3.setBounds(290, 442, 923, 406);
+		lblNewLabel_3.setBounds(365, 517, 923, 406);
 		contentPane.add(lblNewLabel_3);
 	
 	    }

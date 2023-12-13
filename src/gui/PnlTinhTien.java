@@ -83,7 +83,7 @@ public class PnlTinhTien extends JFrame {
 
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(0, 0, 1724, 182);
+		panel.setBounds(0, 0, 2077, 182);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
@@ -120,24 +120,29 @@ public class PnlTinhTien extends JFrame {
 				}
 			}
 		});
-		btnNewButton_1.setBounds(972, 126, 114, 33);
+		btnNewButton_1.setBounds(1145, 126, 114, 33);
 		panel.add(btnNewButton_1);
 		
 		JLabel lblNguoiDung = new JLabel("Người dùng:");
 		String tenDangNhap = PnlDangNhap.tenDangNhap;
 		lblNguoiDung.setText(lblNguoiDung.getText() + " " + TaiKhoanDao.getTenNV(tenDangNhap));
 		lblNguoiDung.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNguoiDung.setBounds(911, 85, 270, 30);
+		lblNguoiDung.setBounds(1084, 85, 270, 30);
 		panel.add(lblNguoiDung);
 		
 		JLabel lblNewLabel_5 = new JLabel("");
 		lblNewLabel_5.setIcon(new ImageIcon(PnlTinhTien.class.getResource("/res/tenDangNhap.png")));
-		lblNewLabel_5.setBounds(990, 11, 78, 63);
+		lblNewLabel_5.setBounds(1163, 11, 78, 63);
 		panel.add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_5_1 = new JLabel("Karaoke Nice");
+		lblNewLabel_5_1.setFont(new Font("Vladimir Script", Font.BOLD, 80));
+		lblNewLabel_5_1.setBounds(495, 52, 558, 107);
+		panel.add(lblNewLabel_5_1);
 
 		JLabel lblNewLabel_1 = new JLabel("THANH TOÁN");
-		lblNewLabel_1.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-		lblNewLabel_1.setBounds(28, 193, 206, 57);
+		lblNewLabel_1.setFont(new Font("Times New Roman", Font.BOLD, 30));
+		lblNewLabel_1.setBounds(28, 193, 281, 64);
 		contentPane.add(lblNewLabel_1);
 
 		JScrollPane scrollPane = new JScrollPane();
@@ -171,39 +176,39 @@ public class PnlTinhTien extends JFrame {
 		contentPane.add(separator);
 
 		JLabel lblNewLabel_2 = new JLabel("THÔNG TIN THANH TOÁN");
-		lblNewLabel_2.setFont(new Font("Times New Roman", Font.PLAIN, 25));
-		lblNewLabel_2.setBounds(10, 502, 372, 51);
+		lblNewLabel_2.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lblNewLabel_2.setBounds(40, 516, 372, 51);
 		contentPane.add(lblNewLabel_2);
 
-		JLabel lblNewLabel_3 = new JLabel("Danh sách hóa đơn");
-		lblNewLabel_3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNewLabel_3.setBounds(10, 272, 281, 28);
+		JLabel lblNewLabel_3 = new JLabel("DANH SÁCH HÓA ĐƠN");
+		lblNewLabel_3.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lblNewLabel_3.setBounds(38, 272, 281, 28);
 		contentPane.add(lblNewLabel_3);
 
 		JLabel lblNewLabel_4 = new JLabel("Tên Khách Hàng:");
 		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNewLabel_4.setBounds(38, 564, 175, 37);
+		lblNewLabel_4.setBounds(38, 578, 175, 37);
 		contentPane.add(lblNewLabel_4);
 
 		JLabel lblNewLabel_4_1 = new JLabel("Số giờ hát:");
 		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNewLabel_4_1.setBounds(38, 646, 160, 37);
+		lblNewLabel_4_1.setBounds(38, 660, 160, 37);
 		contentPane.add(lblNewLabel_4_1);
 
 		JLabel lblNewLabel_4_2 = new JLabel("Tổng tiền hát:");
 		lblNewLabel_4_2.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNewLabel_4_2.setBounds(482, 646, 175, 37);
+		lblNewLabel_4_2.setBounds(482, 660, 175, 37);
 		contentPane.add(lblNewLabel_4_2);
 
 		JLabel lblNewLabel_4_3 = new JLabel("Số điện thoại:");
 		lblNewLabel_4_3.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNewLabel_4_3.setBounds(482, 564, 175, 37);
+		lblNewLabel_4_3.setBounds(482, 578, 175, 37);
 		contentPane.add(lblNewLabel_4_3);
 
 		txtTenKH = new JTextField();
 		txtTenKH.setEditable(false);
 		txtTenKH.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		txtTenKH.setBounds(205, 564, 229, 30);
+		txtTenKH.setBounds(205, 578, 229, 30);
 		contentPane.add(txtTenKH);
 		txtTenKH.setColumns(10);
 
@@ -211,21 +216,22 @@ public class PnlTinhTien extends JFrame {
 		txtSoGioHat.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtSoGioHat.setEditable(false);
 		txtSoGioHat.setColumns(10);
-		txtSoGioHat.setBounds(205, 646, 229, 30);
+		txtSoGioHat.setBounds(205, 660, 229, 30);
 		contentPane.add(txtSoGioHat);
 
 		txtSDT = new JTextField();
 		txtSDT.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtSDT.setEditable(false);
 		txtSDT.setColumns(10);
-		txtSDT.setBounds(637, 564, 229, 30);
+		txtSDT.setBounds(637, 578, 229, 30);
 		contentPane.add(txtSDT);
 
 		txtTongTienHat = new JTextField();
 		txtTongTienHat.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTongTienHat.setEditable(false);
+		
 		txtTongTienHat.setColumns(10);
-		txtTongTienHat.setBounds(637, 646, 229, 30);
+		txtTongTienHat.setBounds(637, 660, 229, 30);
 		contentPane.add(txtTongTienHat);
 
 		JPanel panel_1 = new JPanel();
@@ -284,6 +290,7 @@ public class PnlTinhTien extends JFrame {
 		panel_1.add(txtTienTraLai);
 
 		JButton btnNewButton = new JButton("Thanh toán");
+		btnNewButton.setBackground(new Color(255, 255, 255));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {

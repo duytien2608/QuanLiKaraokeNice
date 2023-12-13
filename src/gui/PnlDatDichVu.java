@@ -91,7 +91,7 @@ public class PnlDatDichVu extends JFrame {
 
 		JPanel panel = new JPanel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(0, 0, 1473, 198);
+		panel.setBounds(0, 0, 1943, 198);
 		getContentPane().add(panel);
 		panel.setLayout(null);
 
@@ -133,19 +133,19 @@ public class PnlDatDichVu extends JFrame {
 		});
 		btnDangXuat.setFont(new Font("Times New Roman", Font.PLAIN, 15));
 		btnDangXuat.setIcon(new ImageIcon(PnlDatDichVu.class.getResource("/res/account-logout-16.png")));
-		btnDangXuat.setBounds(1252, 132, 112, 40);
+		btnDangXuat.setBounds(1252, 147, 112, 40);
 		panel.add(btnDangXuat);
 
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon(PnlDatDichVu.class.getResource("/res/tenDangNhap.png")));
-		lblNewLabel_2.setBounds(1273, 11, 75, 64);
+		lblNewLabel_2.setBounds(1273, 26, 75, 64);
 		panel.add(lblNewLabel_2);
 
 		JLabel lblNguoiDung = new JLabel("Người dùng:");
 		String tenDangNhap = PnlDangNhap.tenDangNhap;
 		lblNguoiDung.setText(lblNguoiDung.getText() + " " + TaiKhoanDao.getTenNV(tenDangNhap));
 		lblNguoiDung.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNguoiDung.setBounds(1179, 86, 350, 41);
+		lblNguoiDung.setBounds(1179, 101, 350, 41);
 		panel.add(lblNguoiDung);
 
 		JLabel lblNewLabel_3 = new JLabel("Thông tin đặt dịch vụ");

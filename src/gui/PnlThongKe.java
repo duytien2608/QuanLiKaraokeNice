@@ -69,7 +69,7 @@ public class PnlThongKe extends JFrame {
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(32, 178, 170));
-		panel_1.setBounds(0, 0, 1518, 203);
+		panel_1.setBounds(0, 0, 1985, 203);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 		
@@ -80,19 +80,19 @@ public class PnlThongKe extends JFrame {
 		
 		JLabel lblNewLabel_1 = new JLabel("Karaoke Nice");
 		lblNewLabel_1.setFont(new Font("Vladimir Script", Font.BOLD, 80));
-		lblNewLabel_1.setBounds(517, 63, 487, 78);
+		lblNewLabel_1.setBounds(517, 80, 487, 78);
 		panel_1.add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("");
 		lblNewLabel_2.setIcon(new ImageIcon(PnlThongKe.class.getResource("/res/tenDangNhap.png")));
-		lblNewLabel_2.setBounds(1330, 11, 85, 72);
+		lblNewLabel_2.setBounds(1276, 32, 85, 72);
 		panel_1.add(lblNewLabel_2);
 		
 		JLabel lblNguoiDung = new JLabel("Người dùng:");
 		String tenDangNhap = PnlDangNhap.tenDangNhap;
 		lblNguoiDung.setText(lblNguoiDung.getText() + " " + TaiKhoanDao.getTenNV(tenDangNhap));
 		lblNguoiDung.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lblNguoiDung.setBounds(1231, 102, 351, 37);
+		lblNguoiDung.setBounds(1180, 101, 351, 37);
 		panel_1.add(lblNguoiDung);
 		
 		JButton btnNewButton = new JButton("Thoát");
@@ -124,7 +124,7 @@ public class PnlThongKe extends JFrame {
 		});
 		btnNewButton.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		btnNewButton.setIcon(new ImageIcon(PnlThongKe.class.getResource("/res/account-logout-16.png")));
-		btnNewButton.setBounds(1311, 136, 119, 43);
+		btnNewButton.setBounds(1266, 149, 119, 43);
 		panel_1.add(btnNewButton);
 		
 		JLabel lblNewLabel_3 = new JLabel("THỐNG KÊ");
@@ -133,12 +133,12 @@ public class PnlThongKe extends JFrame {
 		contentPane.add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("Chức năng:");
-		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		lblNewLabel_4.setFont(new Font("Times New Roman", Font.PLAIN, 23));
 		lblNewLabel_4.setBounds(100, 318, 137, 47);
 		contentPane.add(lblNewLabel_4);
 		
 		JComboBox cbChucNang = new JComboBox();
-		cbChucNang.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		cbChucNang.setFont(new Font("Times New Roman", Font.PLAIN, 23));
 		cbChucNang.setModel(new DefaultComboBoxModel(new String[] {"Thống kê Doanh thu", "Thống kê Nhân viên", "Thống kê Khách hàng", "Thống kê Phòng hát"}));
 		cbChucNang.setBounds(247, 318, 290, 42);
 		contentPane.add(cbChucNang);
@@ -186,25 +186,25 @@ public class PnlThongKe extends JFrame {
 		contentPane.add(separator);
 		
 		JLabel lblNewLabel_4_1 = new JLabel("Doanh thu dịch vụ:");
-		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		lblNewLabel_4_1.setFont(new Font("Times New Roman", Font.PLAIN, 23));
 		lblNewLabel_4_1.setBounds(100, 478, 228, 47);
 		contentPane.add(lblNewLabel_4_1);
 		
 		JLabel lblNewLabel_4_2 = new JLabel("Tổng doanh thu:");
-		lblNewLabel_4_2.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		lblNewLabel_4_2.setFont(new Font("Times New Roman", Font.PLAIN, 23));
 		lblNewLabel_4_2.setBounds(644, 485, 199, 47);
 		contentPane.add(lblNewLabel_4_2);
 		
 		txtDoanhThuDV = new JTextField();
 		txtDoanhThuDV.setEditable(false);
-		txtDoanhThuDV.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		txtDoanhThuDV.setFont(new Font("Times New Roman", Font.PLAIN, 23));
 		txtDoanhThuDV.setBounds(338, 483, 191, 37);
 		contentPane.add(txtDoanhThuDV);
 		txtDoanhThuDV.setColumns(10);
 		
 		txtTongDoanhThu = new JTextField();
 		txtTongDoanhThu.setEditable(false);
-		txtTongDoanhThu.setFont(new Font("Times New Roman", Font.PLAIN, 25));
+		txtTongDoanhThu.setFont(new Font("Times New Roman", Font.PLAIN, 23));
 		txtTongDoanhThu.setColumns(10);
 		txtTongDoanhThu.setBounds(854, 486, 191, 37);
 		contentPane.add(txtTongDoanhThu);

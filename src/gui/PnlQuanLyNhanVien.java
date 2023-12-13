@@ -115,14 +115,14 @@ public class PnlQuanLyNhanVien extends JFrame {
 
 		Panel panel = new Panel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(-190, 0, 2018, 172);
+		panel.setBounds(-190, 0, 2366, 182);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
 		JLabel lbl_Karaoke = new JLabel("Karaoke Nice");
 		lbl_Karaoke.setBackground(new Color(32, 178, 1));
 		lbl_Karaoke.setFont(new Font("Vladimir Script", Font.BOLD, 80));
-		lbl_Karaoke.setBounds(838, 48, 446, 87);
+		lbl_Karaoke.setBounds(834, 61, 446, 87);
 		panel.add(lbl_Karaoke);
 
 		JButton btn_DangXuat = new JButton("Thoát");
@@ -170,101 +170,101 @@ public class PnlQuanLyNhanVien extends JFrame {
 
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(PnlQuanLyNhanVien.class.getResource("/res/kara.png")));
-		lblNewLabel_1.setBounds(194, 0, 250, 172);
+		lblNewLabel_1.setBounds(194, 0, 250, 182);
 		panel.add(lblNewLabel_1);
 
 		JLabel lbl_ThongTinNV = new JLabel("Thông tin nhân viên");
-		lbl_ThongTinNV.setBounds(10, 177, 172, 25);
-		lbl_ThongTinNV.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lbl_ThongTinNV.setBounds(20, 188, 260, 41);
+		lbl_ThongTinNV.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		contentPane.add(lbl_ThongTinNV);
 
 		JLabel lbl_MaNV = new JLabel("Mã NV:");
 		lbl_MaNV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_MaNV.setBounds(96, 210, 115, 30);
+		lbl_MaNV.setBounds(98, 240, 115, 30);
 		contentPane.add(lbl_MaNV);
 
 		JLabel lbl_NgaySinh = new JLabel("Ngày sinh:");
 		lbl_NgaySinh.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_NgaySinh.setBounds(96, 265, 115, 30);
+		lbl_NgaySinh.setBounds(98, 295, 115, 30);
 		contentPane.add(lbl_NgaySinh);
 
 		JLabel lbl_ChucVu = new JLabel("Chức vụ:");
 		lbl_ChucVu.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_ChucVu.setBounds(96, 320, 115, 30);
+		lbl_ChucVu.setBounds(98, 350, 115, 30);
 		contentPane.add(lbl_ChucVu);
 
 		JLabel lbl_TenNV = new JLabel("Tên NV:");
 		lbl_TenNV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_TenNV.setBounds(610, 210, 115, 30);
+		lbl_TenNV.setBounds(612, 240, 115, 30);
 		contentPane.add(lbl_TenNV);
 
 		JLabel lbl_SoCMND = new JLabel("Số CCCD:");
 		lbl_SoCMND.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_SoCMND.setBounds(610, 265, 115, 30);
+		lbl_SoCMND.setBounds(612, 295, 115, 30);
 		contentPane.add(lbl_SoCMND);
 
 		JLabel lbl_GioiTinh = new JLabel("Giới tính:");
 		lbl_GioiTinh.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_GioiTinh.setBounds(1080, 210, 115, 30);
+		lbl_GioiTinh.setBounds(1082, 240, 115, 30);
 		contentPane.add(lbl_GioiTinh);
 
 		JLabel lbl_SĐT = new JLabel("Số điện thoại:");
 		lbl_SĐT.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_SĐT.setBounds(1080, 265, 115, 30);
+		lbl_SĐT.setBounds(1082, 295, 115, 30);
 		contentPane.add(lbl_SĐT);
 
 		txtMaNV = new JTextField();
 		txtMaNV.setEditable(false);
 		txtMaNV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		txtMaNV.setBounds(215, 210, 200, 30);
+		txtMaNV.setBounds(217, 240, 200, 30);
 		contentPane.add(txtMaNV);
 		txtMaNV.setColumns(10);
 
 		txtNgaySinh = new JTextField();
 		txtNgaySinh.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtNgaySinh.setColumns(10);
-		txtNgaySinh.setBounds(215, 265, 200, 30);
+		txtNgaySinh.setBounds(217, 295, 200, 30);
 		contentPane.add(txtNgaySinh);
 
 		txtTenNV = new JTextField();
 		txtTenNV.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTenNV.setColumns(10);
-		txtTenNV.setBounds(730, 210, 200, 30);
+		txtTenNV.setBounds(732, 240, 200, 30);
 		contentPane.add(txtTenNV);
 
 		txtCCCD = new JTextField();
 		txtCCCD.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtCCCD.setColumns(10);
-		txtCCCD.setBounds(730, 265, 200, 30);
+		txtCCCD.setBounds(732, 295, 200, 30);
 		contentPane.add(txtCCCD);
 
 		cbChucVu = new JComboBox();
 		cbChucVu.setModel(new DefaultComboBoxModel(new String[] { "Quản lý", "Kế toán", "Nhân viên" }));
 		cbChucVu.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		cbChucVu.setBounds(215, 320, 200, 30);
+		cbChucVu.setBounds(217, 350, 200, 30);
 		contentPane.add(cbChucVu);
 
 		txtSDT = new JTextField();
 		txtSDT.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtSDT.setColumns(10);
-		txtSDT.setBounds(1220, 265, 200, 30);
+		txtSDT.setBounds(1222, 295, 200, 30);
 		contentPane.add(txtSDT);
 
 		rdNam = new JRadioButton("Nam");
 		buttonGroup.add(rdNam);
 		rdNam.setSelected(true);
 		rdNam.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		rdNam.setBounds(1213, 210, 100, 30);
+		rdNam.setBounds(1215, 240, 100, 30);
 		contentPane.add(rdNam);
 
 		rdNu = new JRadioButton("Nữ");
 		buttonGroup.add(rdNu);
 		rdNu.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		rdNu.setBounds(1356, 210, 100, 30);
+		rdNu.setBounds(1358, 240, 100, 30);
 		contentPane.add(rdNu);
 
 		JSeparator separator = new JSeparator();
-		separator.setBounds(0, 360, 1540, 2);
+		separator.setBounds(0, 399, 1540, 2);
 		contentPane.add(separator);
 
 		btn_Them = new JButton("Thêm");
@@ -280,7 +280,7 @@ public class PnlQuanLyNhanVien extends JFrame {
 		btn_Them.setIcon(new ImageIcon(PnlQuanLyNhanVien.class.getResource("/res/icons8-add-20.png")));
 		btn_Them.setBackground(new Color(240, 230, 140));
 		btn_Them.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Them.setBounds(200, 370, 120, 30);
+		btn_Them.setBounds(200, 409, 120, 41);
 		contentPane.add(btn_Them);
 
 		btn_Sua = new JButton("Sửa");
@@ -301,7 +301,7 @@ public class PnlQuanLyNhanVien extends JFrame {
 		btn_Sua.setIcon(new ImageIcon(PnlQuanLyNhanVien.class.getResource("/res/icons8-pencil-16.png")));
 		btn_Sua.setBackground(new Color(240, 230, 140));
 		btn_Sua.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_Sua.setBounds(450, 370, 120, 30);
+		btn_Sua.setBounds(450, 409, 120, 41);
 		contentPane.add(btn_Sua);
 
 		btn_XoaTrang = new JButton("Xóa trắng");
@@ -313,7 +313,7 @@ public class PnlQuanLyNhanVien extends JFrame {
 		btn_XoaTrang.setIcon(new ImageIcon(PnlQuanLyNhanVien.class.getResource("/res/x-mark-16.png")));
 		btn_XoaTrang.setBackground(new Color(240, 230, 140));
 		btn_XoaTrang.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_XoaTrang.setBounds(711, 370, 144, 30);
+		btn_XoaTrang.setBounds(711, 409, 144, 41);
 		contentPane.add(btn_XoaTrang);
 
 		btn_TimKiem = new JButton("Tìm kiếm");
@@ -326,16 +326,16 @@ public class PnlQuanLyNhanVien extends JFrame {
 		btn_TimKiem.setIcon(new ImageIcon(PnlQuanLyNhanVien.class.getResource("/res/icons8-search-16.png")));
 		btn_TimKiem.setBackground(new Color(240, 230, 140));
 		btn_TimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		btn_TimKiem.setBounds(1220, 370, 137, 30);
+		btn_TimKiem.setBounds(1220, 409, 137, 41);
 		contentPane.add(btn_TimKiem);
 
 		JLabel lbl_DSNV = new JLabel("Danh sách nhân viên:");
-		lbl_DSNV.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lbl_DSNV.setBounds(10, 410, 190, 25);
+		lbl_DSNV.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lbl_DSNV.setBounds(20, 478, 250, 30);
 		contentPane.add(lbl_DSNV);
 
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 445, 1540, 314);
+		scrollPane.setBounds(10, 526, 1540, 314);
 		contentPane.add(scrollPane);
 
 		tbNhanVien = new JTable();
@@ -345,10 +345,14 @@ public class PnlQuanLyNhanVien extends JFrame {
 				HienThiForm();
 			}
 		});
-		tbNhanVien.setModel(new DefaultTableModel(new Object[][] {},
-				new String[] { "M\u00E3 NV", "T\u00EAn NV", "Gi\u1EDBi t\u00EDnh", "Ng\u00E0y sinh",
-						"S\u1ED1 \u0111i\u1EC7n tho\u1EA1i", "Email", "CCCD", "Ch\u1EE9c v\u1EE5" }));
-		tbNhanVien.setFont(new Font("Times New Roman", Font.PLAIN, 15));
+		tbNhanVien.setModel(new DefaultTableModel(
+			new Object[][] {
+			},
+			new String[] {
+				"M\u00E3 NV", "T\u00EAn NV", "Gi\u1EDBi t\u00EDnh", "Ng\u00E0y sinh", "S\u1ED1 \u0111i\u1EC7n tho\u1EA1i", "Email", "CCCD", "Ch\u1EE9c v\u1EE5"
+			}
+		));
+		tbNhanVien.setFont(new Font("Times New Roman", Font.PLAIN, 17));
 		list = new NhanVien_dao().doctuBang();
 		model = (DefaultTableModel) tbNhanVien.getModel();
 		updateTableData();
@@ -356,24 +360,24 @@ public class PnlQuanLyNhanVien extends JFrame {
 
 		JLabel lbl_SoCMND_1 = new JLabel("Email:");
 		lbl_SoCMND_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_SoCMND_1.setBounds(610, 320, 115, 30);
+		lbl_SoCMND_1.setBounds(612, 350, 115, 30);
 		contentPane.add(lbl_SoCMND_1);
 
 		txtEmail = new JTextField();
 		txtEmail.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtEmail.setColumns(10);
-		txtEmail.setBounds(730, 320, 200, 30);
+		txtEmail.setBounds(732, 350, 200, 30);
 		contentPane.add(txtEmail);
 
 		JLabel lbl_SĐT_1 = new JLabel("Tìm kiếm:");
 		lbl_SĐT_1.setFont(new Font("Times New Roman", Font.PLAIN, 20));
-		lbl_SĐT_1.setBounds(1080, 320, 115, 30);
+		lbl_SĐT_1.setBounds(1082, 350, 115, 30);
 		contentPane.add(lbl_SĐT_1);
 
 		txtTimKiem = new JTextField();
 		txtTimKiem.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		txtTimKiem.setColumns(10);
-		txtTimKiem.setBounds(1220, 320, 200, 30);
+		txtTimKiem.setBounds(1222, 350, 200, 30);
 		contentPane.add(txtTimKiem);
 
 		JButton btn_LamMoi = new JButton("Làm mới");
@@ -385,7 +389,7 @@ public class PnlQuanLyNhanVien extends JFrame {
 		btn_LamMoi.setIcon(new ImageIcon(PnlQuanLyNhanVien.class.getResource("/res/icons8-refresh-16.png")));
 		btn_LamMoi.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		btn_LamMoi.setBackground(new Color(240, 230, 140));
-		btn_LamMoi.setBounds(974, 370, 144, 30);
+		btn_LamMoi.setBounds(974, 409, 144, 41);
 		contentPane.add(btn_LamMoi);
 
 	}

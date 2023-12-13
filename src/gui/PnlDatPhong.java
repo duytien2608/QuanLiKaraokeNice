@@ -111,14 +111,14 @@ public class PnlDatPhong extends JFrame {
 
 		Panel panel = new Panel();
 		panel.setBackground(new Color(32, 178, 170));
-		panel.setBounds(-190, 0, 1920, 178);
+		panel.setBounds(-190, 0, 2584, 178);
 		contentPane.add(panel);
 		panel.setLayout(null);
 
 		JLabel lbl_Karaoke = new JLabel("Karaoke Nice");
 		lbl_Karaoke.setBackground(new Color(32, 178, 1));
-		lbl_Karaoke.setFont(new Font("Vladimir Script", Font.PLAIN, 80));
-		lbl_Karaoke.setBounds(725, 25, 426, 107);
+		lbl_Karaoke.setFont(new Font("Vladimir Script", Font.BOLD, 80));
+		lbl_Karaoke.setBounds(723, 36, 426, 107);
 		panel.add(lbl_Karaoke);
 
 		JButton btn_DangXuat = new JButton("Thoát");
@@ -149,7 +149,7 @@ public class PnlDatPhong extends JFrame {
 		});
 		btn_DangXuat.setIcon(new ImageIcon(PnlDatPhong.class.getResource("/res/account-logout-16.png")));
 		btn_DangXuat.setFont(new Font("Times New Roman", Font.PLAIN, 15));
-		btn_DangXuat.setBounds(1542, 119, 108, 35);
+		btn_DangXuat.setBounds(1540, 130, 108, 35);
 		panel.add(btn_DangXuat);
 
 		JLabel lblNewLabel = new JLabel("");
@@ -159,18 +159,18 @@ public class PnlDatPhong extends JFrame {
 
 		JLabel lblNewLabel_1 = new JLabel("");
 		lblNewLabel_1.setIcon(new ImageIcon(PnlDatPhong.class.getResource("/res/tenDangNhap.png")));
-		lblNewLabel_1.setBounds(1565, 0, 86, 79);
+		lblNewLabel_1.setBounds(1563, 11, 86, 79);
 		panel.add(lblNewLabel_1);
 
 		JLabel lblNguoiDung = new JLabel("Người dùng:");
 		lblNguoiDung.setFont(new Font("Times New Roman", Font.PLAIN, 20));
 		String tenDangNhap = PnlDangNhap.tenDangNhap;
-		lblNguoiDung.setText(lblNguoiDung.getText() + " " + TaiKhoanDao.getTenNV(tenDangNhap));		lblNguoiDung.setBounds(1478, 75, 349, 43);
+		lblNguoiDung.setText(lblNguoiDung.getText() + " " + TaiKhoanDao.getTenNV(tenDangNhap));		lblNguoiDung.setBounds(1476, 86, 349, 43);
 		panel.add(lblNguoiDung);
 
 		JLabel lbl_ThongTinDV = new JLabel("Thông tin đặt phòng:");
-		lbl_ThongTinDV.setBounds(10, 184, 190, 25);
-		lbl_ThongTinDV.setFont(new Font("Times New Roman", Font.BOLD, 20));
+		lbl_ThongTinDV.setBounds(10, 184, 250, 25);
+		lbl_ThongTinDV.setFont(new Font("Times New Roman", Font.BOLD, 25));
 		contentPane.add(lbl_ThongTinDV);
 
 		JLabel lbl_MaDV = new JLabel("Mã khách hàng:");
@@ -274,8 +274,8 @@ public class PnlDatPhong extends JFrame {
 		contentPane.add(btn_TimKiem);
 
 		JLabel lbl_DSDV = new JLabel("Danh sách phòng:");
-		lbl_DSDV.setFont(new Font("Times New Roman", Font.BOLD, 20));
-		lbl_DSDV.setBounds(10, 478, 200, 25);
+		lbl_DSDV.setFont(new Font("Times New Roman", Font.BOLD, 25));
+		lbl_DSDV.setBounds(10, 464, 200, 25);
 		contentPane.add(lbl_DSDV);
 
 		JScrollPane scrollPane = new JScrollPane();
