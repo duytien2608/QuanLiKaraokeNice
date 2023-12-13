@@ -34,7 +34,7 @@ public class excelFile extends ConnectSQL {
 			Cell cell = headerRow.createCell(i - 1);
 			cell.setCellValue(rs.getMetaData().getColumnName(i));
 		}
-		int rowNum = 2;
+		int rowNum = 1;
 		while (rs.next()) {
 			Row row = sheet.createRow(rowNum++);
 			int colNum = 0;
